@@ -1,4 +1,4 @@
 JAVA-basis
 ==========
 
-Samenvatting cursus JAVA basis TMK-ICT
+Samenvatting cursus JAVA basis TMK-ICT.
