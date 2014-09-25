@@ -53,48 +53,18 @@ U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
     > [JFrame](swing/JFrame.md) - [JPanel](swing/JPanel.md)   
     > [JButton](swing/JTextField.md) - [JLabel](swing/JLabel.md) - [JTextField](swing/JTextField.md)  
     > border - BorderFactory - JScrollPane 
-*   java.awt.event.\*
+*   **java.awt.event.\***
 
     >  ActionEvent - ActionListener
+*   **java.awt.\***
 
+    >  Color - FlowLayout - Font - Graphics - GridLayout - Polygon
+*   **java.lang.\***
 
-<dl>
-    <dt>javax.swing.\*</dt>
-    <dd>[JFrame](swing/JFrame.md)
-        - [JPanel](swing/JPanel.md)  
+    >  Boolean - Char - Double - Integer - Math - Object - String - StringBuffer - System
+*   **java.util.\***
 
-        [JButton](swing/JTextField.md)
-        - [JLabel](swing/JLabel.md)
-        - [JTextField](swing/JTextField.md)  
-        
-        border
-        - BorderFactory
-        - JScrollPane
-        </dd>
-    <dt>java.awt.event.\*</dt>
-    <dd>ActionEvent
-        - ActionListener</dd>
-    <dt>java.awt.\*</dt>
-    <dd>Color
-        - FlowLayout
-        - Font
-        - Graphics
-        - GridLayout
-        - Polygon</dd>
-    <dt>java.lang.\*</dt>
-    <dd>Boolean
-        - Char
-        - Double
-        - Integer
-        - Math
-        - Object
-        - String
-        - StringBuffer
-        - System</dd>
-    <dt>java.util.\*</dt>
-    <dd>ArrayList
-        - Local</dd>
-</dl>
+    >  ArrayList - Local
 
 ## Primitieve data-types
 
