@@ -48,6 +48,16 @@ U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
 
 ##JAVA packages
 
+*   **javax.swing.\***
+
+    > [JFrame](swing/JFrame.md) - [JPanel](swing/JPanel.md)   
+    > [JButton](swing/JTextField.md) - [JLabel](swing/JLabel.md) - [JTextField](swing/JTextField.md)  
+    > border - BorderFactory - JScrollPane 
+*   java.awt.event.\*
+
+    >  ActionEvent - ActionListener
+
+
 <dl>
     <dt>javax.swing.\*</dt>
     <dd>[JFrame](swing/JFrame.md)
@@ -99,24 +109,25 @@ Met zo'n wrapper-object kun je o.a. de primitieve datatypen converteren naar str
 
 | Type |  Wrapper  |Bits | String naar getal| getal naar String |
 | ------------- | -----|----------------- | -------------| ---- |
-| **b**yte |  **B**yte|8 | Byte.parseByte("string") | Byte.toString(getal) |
-| **s**hort | **S**hort| 16 | Short.parseShort("string") | Short.toString(getal) | 
-| **i**nt |**I**nt**eger**| 32 |  Integer.parseInt("string") | Integer.toString(getal) |
-| **l**ong | **L**ong|64 | Long.parseLong("string") | Long.toString(getal) | 
+| byte |  Byte | 8 | Byte.parseByte("string") | Byte.toString(getal) |
+| short | Short| 16 | Short.parseShort("string") | Short.toString(getal) | 
+| int |Integer| 32 |  Integer.parseInt("string") | Integer.toString(getal) |
+| long | Long|64 | Long.parseLong("string") | Long.toString(getal) | 
 
 ### Gebroken getallen
 
 | Type |  Wrapper  |Bits | String naar getal| getal naar String |
 | ------------- | -----|----------------- | -------------|  --- |
-| **f**loat | **F**loat| 32 | Float.parseFloat("5.7") | Float.toString(getal) |
-| **d**ouble | **D**ouble|  64 |  Double.parseDouble("5.7") | Double.toString(getal) |
+| float | Float| 32 | Float.parseFloat("5.7") | Float.toString(getal) |
+| double | Double|  64 |  Double.parseDouble("5.7") | Double.toString(getal) |
 
 ### Overige
 
 | Overige |  Wrapper  | Waarde |
-| ------------- | -----| -------------|
-| **c**har | **C**har**acter** |één 16-bit [Unicode](http://nl.wikipedia.org/wiki/Unicode) karakter | 
-| **b**oolean | **B**oolean|  `true` of `false` |
+| ------------- | -----| ------------- |
+| char | Character |één 16-bit [Unicode](http://nl.wikipedia.org/wiki/Unicode) karakter | 
+| boolean | Boolean|  `true` of `false` |
+| char | Character|één 16-bit [Unicode](http://nl.wikipedia.org/wiki/Unicode) karakter |
 
 Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html)
 
