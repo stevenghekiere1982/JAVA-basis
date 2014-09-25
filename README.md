@@ -77,27 +77,26 @@ Met zo'n wrapper-object kun je o.a. de primitieve datatypen converteren naar str
 
 ###Gehele getallen
 
-| Type |  Wrapper  |Bits | String naar getal| getal naar String |
-| ------------- | -----|----------------- | -------------| ---- |
-| byte |  Byte | 8 | Byte.parseByte("string") | Byte.toString(getal) |
-| short | Short| 16 | Short.parseShort("string") | Short.toString(getal) | 
-| int |Integer| 32 |  Integer.parseInt("string") | Integer.toString(getal) |
-| long | Long|64 | Long.parseLong("string") | Long.toString(getal) | 
+| type |  wrapper  |bits | String naar getal| getal naar String | getal naar String |
+| ------------- | -----|----------------- | -------------| ---- | ---- |
+| byte |  Byte | 8 | Byte.parseByte("string") | Byte.toString(getal) | "" + getal |
+| short | Short| 16 | Short.parseShort("string") | Short.toString(getal) | "" + getal | 
+| int |Integer| 32 |  Integer.parseInt("string") | Integer.toString(getal) | "" + getal |
+| long | Long|64 | Long.parseLong("string") | Long.toString(getal) |  "" + getal |
 
 ### Gebroken getallen
 
-| Type |  Wrapper  |Bits | String naar getal| getal naar String |
-| ------------- | -----|----------------- | -------------|  --- |
-| float | Float| 32 | Float.parseFloat("5.7") | Float.toString(getal) |
-| double | Double|  64 |  Double.parseDouble("5.7") | Double.toString(getal) |
+| type |  wrapper  |bits | String naar getal| getal naar String | getal naar String |
+| ------------- | -----|----------------- | -------------|  --- | ---- |
+| float | Float| 32 | Float.parseFloat("5.7") | Float.toString(getal) | "" + getal |
+| double | Double|  64 |  Double.parseDouble("5.7") | Double.toString(getal) | "" + getal |
 
 ### Overige
 
-| Overige |  Wrapper  | Waarde |
+| overige |  wrapper  | waarde |
 | ------------- | -----| ------------- |
 | char | Character |één 16-bit [Unicode](http://nl.wikipedia.org/wiki/Unicode) karakter | 
 | boolean | Boolean|  `true` of `false` |
-| char | Character|één 16-bit [Unicode](http://nl.wikipedia.org/wiki/Unicode) karakter |
 
 Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html)
 
