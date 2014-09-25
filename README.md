@@ -1,57 +1,127 @@
-JAVA-basis
+JAVA-basis (Swing)
 ==========
 
-Samenvatting cursus JAVA basis TMK-ICT.
+Samenvatting cursus JAVA basis Thomas More Kempen: Elektronica-ICT.
+
+U kan deze samenvatting offline lezen met de [MarkView plug-in](http://shaneweng.com/blog/view-markdown-file-with-markview/) voor Chrome. Vink zeker de optie "Allow access to file URLs" aan in [chrome://extensions/](chrome://extensions/)
 
 ## Inhoudstafel
 
-- [NetNeans shortcuts en templates](#netNeans-shortcuts-en-templates)
+- [NetBeans shortcuts](#netbeans-shortcuts)
+- [NetBeans Code Templates](#netbeans-code-templates)
 - [JAVA packages](#java-packages)
+- [Primitieve data-types](#primitieve-data-types)
+- [Links](#links)
 
-## NetNeans shortcuts en templates
+## NetBeans shortcuts
+
+| Shortcut        | Actie  |
+| ------------- | -----|
+| `Ctrl+r` | Naam van een variabele globaal vervangen |
+| `Ctrl+shift+c` | Zet een gans blok code in/uit commentaar |
+| `Ctrl+shift+i` | Voeg ontbrekende imports toe |
+| `Alt-Shift-F` | Herformateer decode |
+
+## NetBeans Code Templates
+
+Code Templates zijn lettercombinaties waarmee u snel een basisitructuur op de pagina plaatste.   
+U vindt deze terug onder het menu: Tools -> Options -> Editor -> Code Templates (Language: Java).  
+
+Typ de lettercombinatie gevolgd door een tab om de code te plaatsen.
+
+Enkele voorbeelden van voorgedefinieerde templates:
+
+| Lettercombinatie | Actie  |
+| ------------- | -----|
+| `psvm` | methode main() |
+| `sout` | methoden System.out.println() |
+| `soutv` | methode System.out.println() met variabele |
+
+U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
+
+| Lettercombinatie |  | Actie  |
+| ------------- | ----- | -----|
+| `tmmain` | [code](codeTemplates/tmmain.md) | volledig basisiscript inc. JFrame, JPanel, ActionListener en paintComponent  |
+| `tmaction` | [code](codeTemplates/custom.md#tmaction) | ActionListener |
+| `tmpaint` | [code](codeTemplates/custom.md#tmpaint) | paintComponent |
+| `tmpanel` | [code](codeTemplates/custom.md#tmpanel) | JPanel met ActionListener |
 
 ##JAVA packages
 
-###javax.swing.*
+<dl>
+    <dt>javax.swing.\*</dt>
+    <dd>[JFrame](swing/JFrame.md)
+        - [JPanel](swing/JPanel.md)  
 
-- border
-- BorderFactory
-- JButton
-- JFrame
-- JLabel
-- [JPanel](swing/JPanel.md)
-- JScrollPane
-- JTextField
+        [JButton](swing/JTextField.md)
+        - [JLabel](swing/JLabel.md)
+        - [JTextField](swing/JTextField.md)  
+        
+        border
+        - BorderFactory
+        - JScrollPane
+        </dd>
+    <dt>java.awt.event.\*</dt>
+    <dd>ActionEvent
+        - ActionListener</dd>
+    <dt>java.awt.\*</dt>
+    <dd>Color
+        - FlowLayout
+        - Font
+        - Graphics
+        - GridLayout
+        - Polygon</dd>
+    <dt>java.lang.\*</dt>
+    <dd>Boolean
+        - Char
+        - Double
+        - Integer
+        - Math
+        - Object
+        - String
+        - StringBuffer
+        - System</dd>
+    <dt>java.util.\*</dt>
+    <dd>ArrayList
+        - Local</dd>
+</dl>
 
-### java.awt.event.*
+## Primitieve data-types
 
-- ActionEvent
-- ActionListener
+Java kent **acht primitieve data-typen** die géén objecten zijn:  
+`boolean`, `char`, `byte`, `short`, `int`, `long`, `float` en `double`.  
+Deze datatypen zijn puur bestemd om allerlei waarden op te slaan en rekenkundig bewerkingen op uit te voeren.  
 
-### java.awt.*
+Voor elk van deze datatypen bestaat wel een zogenaamde wrapper object (omhulzen, omwikkelen): `Boolean`, `Character`, `Byte`, `Short`, `Integer`, `Long`, `Float` en `Double`. 
+Met zo'n wrapper-object kun je o.a. de primitieve datatypen converteren naar strings (met de *toString()* methode) of omgekeerd (met o.a. de *parse* methoden). Ook kun je hiermee primitieve datatypen converteren naar wrapper objecten of omgekeerd.
 
-- Color
-- FlowLayout
-- Font
-- Graphics
-- GridLayout
-- Polygon
+###Gehele getallen
 
-### java.lang.*
+| Type |  Wrapper  |Bits | String naar getal| getal naar String |
+| ------------- | -----|----------------- | -------------| ---- |
+| **b**yte |  **B**yte|8 | Byte.parseByte("string") | Byte.toString(getal) |
+| **s**hort | **S**hort| 16 | Short.parseShort("string") | Short.toString(getal) | 
+| **i**nt |**I**nt**eger**| 32 |  Integer.parseInt("string") | Integer.toString(getal) |
+| **l**ong | **L**ong|64 | Long.parseLong("string") | Long.toString(getal) | 
 
-- Boolean
-- Char
-- Double
-- Integer
-- Math
-- Object
-- String
-- StringBuffer
-- System
+### Gebroken getallen
 
-### java.util.*
+| Type |  Wrapper  |Bits | String naar getal| getal naar String |
+| ------------- | -----|----------------- | -------------|  --- |
+| **f**loat | **F**loat| 32 | Float.parseFloat("5.7") | Float.toString(getal) |
+| **d**ouble | **D**ouble|  64 |  Double.parseDouble("5.7") | Double.toString(getal) |
 
-- ArrayList
-- Local
+### Overige
 
-##foo##
+| Overige |  Wrapper  | Waarde |
+| ------------- | -----| -------------|
+| **c**har | **C**har**acter**|één 16-bit [Unicode](http://nl.wikipedia.org/wiki/Unicode) karakter | 
+| **b**oolean | **B**oolean|  `true` of `false` |
+
+Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html)
+
+
+## Links
+
+- [http://www.tutorialspoint.com/java/](http://www.tutorialspoint.com/java/)
+- [https://sites.google.com/site/cursusguielien/](https://sites.google.com/site/cursusguielien/)
