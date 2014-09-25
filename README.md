@@ -115,7 +115,7 @@ Met zo'n wrapper-object kun je o.a. de primitieve datatypen converteren naar str
 
 | Overige |  Wrapper  | Waarde |
 | ------------- | -----| -------------|
-| **c**har | **C**har**acter**|één 16-bit [Unicode](http://nl.wikipedia.org/wiki/Unicode) karakter | 
+| **c**har | **C**har**acter** |één 16-bit [Unicode](http://nl.wikipedia.org/wiki/Unicode) karakter | 
 | **b**oolean | **B**oolean|  `true` of `false` |
 
 Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html)
