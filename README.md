@@ -51,7 +51,7 @@ U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
 *   **javax.swing.\***
 
     > [JFrame](swing/JFrame.md) - [JPanel](swing/JPanel.md)   
-    > [JButton](swing/JTextField.md) - [JLabel](swing/JLabel.md) - [JTextField](swing/JTextField.md)  
+    > [JButton](swing/JButton.md) - [JLabel](swing/JLabel.md) - [JTextField](swing/JTextField.md)  
     > border - BorderFactory - JScrollPane 
 *   **java.awt.event.\***
 
@@ -77,19 +77,19 @@ Met zo'n wrapper-object kun je o.a. de primitieve datatypen converteren naar str
 
 ###Gehele getallen
 
-| type |  wrapper  |bits | String naar getal| getal naar String | getal naar String |
-| ------------- | -----|----------------- | -------------| ---- | ---- |
-| byte |  Byte | 8 | Byte.parseByte("string") | Byte.toString(getal) | "" + getal |
-| short | Short| 16 | Short.parseShort("string") | Short.toString(getal) | "" + getal | 
-| int |Integer| 32 |  Integer.parseInt("string") | Integer.toString(getal) | "" + getal |
-| long | Long|64 | Long.parseLong("string") | Long.toString(getal) |  "" + getal |
+| type |  wrapper  |bits | String naar getal| getal naar String | Type Casting |
+| ------------- | -----|----------------- |  ---- | ---- | ----|
+| byte |  Byte | 8 | Byte.parseByte("string") | "" + getal | (byte) getal |
+| short | Short| 16 | Short.parseShort("string") | "" + getal |  (short) getal |
+| int |Integer| 32 |  Integer.parseInt("string") | "" + getal | (int) getal |
+| long | Long|64 | Long.parseLong("string") |  "" + getal | (long) getal |
 
-### Gebroken getallen
+### Kommagetallen
 
-| type |  wrapper  |bits | String naar getal| getal naar String | getal naar String |
-| ------------- | -----|----------------- | -------------|  --- | ---- |
-| float | Float| 32 | Float.parseFloat("5.7") | Float.toString(getal) | "" + getal |
-| double | Double|  64 |  Double.parseDouble("5.7") | Double.toString(getal) | "" + getal |
+| type |  wrapper  |bits | String naar getal| getal naar String | Type Casting |
+| ------------- | -----|----------------- |  --- | ---- | ----|
+| float | Float| 32 | Float.parseFloat("5.7") | "" + getal | (float) getal |
+| double | Double|  64 |  Double.parseDouble("5.7") | "" + getal | (double) getal |
 
 ### Overige
 
@@ -100,8 +100,15 @@ Met zo'n wrapper-object kun je o.a. de primitieve datatypen converteren naar str
 
 Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html)
 
+##Strings
+
+*   **Strings (en getallen) formatteren**
+
+    > [String.Format()](string/format.md)
 
 ## Links
 
 - [http://www.tutorialspoint.com/java/](http://www.tutorialspoint.com/java/)
 - [https://sites.google.com/site/cursusguielien/](https://sites.google.com/site/cursusguielien/)
+- [http://www.java2s.com/](http://www.java2s.com/)
+- [animal classification](http://kendeanagudo.hubpages.com/hub/Facts-about-Animals-Its-Types-and-Classification#)
