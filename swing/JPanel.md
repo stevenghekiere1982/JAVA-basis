@@ -103,7 +103,7 @@ class Paneel extends JPanel {
     private JLabel lbl = new JLabel("Label");
 
     public Paneel() {
-        setLayout(new GridLayout(3, 2, 10, 10));    //rijen, kolommen, horizontale padding, vertikale padding
+        setLayout(new GridLayout(3, 2, 10, 10));    //rijen, kolommen, horizontale padding, verticale padding
         Border rand = BorderFactory.createEmptyBorder(10, 10, 10, 10);  // rand(boven, links, onder, rechts)
         setBorder(rand);
         add(btn1);
