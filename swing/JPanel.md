@@ -4,15 +4,15 @@ Package: [javax.swing.JPanel](http://docs.oracle.com/javase/7/docs/api/javax/swi
 
 ---
 
-Een  *JPanel* is een container waaron we verschillende componenten kunnen plaatsen. Met behulp van deze componenten maken we de gebruikersinterface (*GUI*).
+Een  *JPanel* is een container waarin we verschillende componenten kunnen plaatsen. Met behulp van deze componenten maken we de gebruikersinterface (*GUI*).
 
 De *GUI* is een aparte klasse met (bijvoorbeeld) de naam *Paneel*.
 
 ##FlowLayout
 
-De *FlowLayout* is de standard lay-outmanager. Hij legt alle componenten in één enkele rij en begint een nieuwe rij wanneer het venster niet voldoende breed is.
+De *FlowLayout* is de standaard lay-outmanager. Hij legt alle componenten in één enkele rij en begint een nieuwe rij wanneer het venster niet voldoende breed is.
 
-Onderstaand voorbeeld toont rood paneel met een knop ([JButton](JButton.md)) een tekstveld ([JTextField](JTextField.md)) en een label ([JLabel](JLabel.md)) in een FlowLayout.
+Onderstaand voorbeeld toont een rood paneel met een knop ([JButton](JButton.md)), een tekstveld ([JTextField](JTextField.md)) en een label ([JLabel](JLabel.md)) in een FlowLayout.
 
 ```java
 import java.awt.*;
@@ -68,7 +68,7 @@ class Paneel extends JPanel {
 
 ##Lay-outmanager uitschakelen
 
-Door de lay-outmanager volledig uit te schakelen, kan je de komponenten tot op de pixel juist positioneren. Met `setBounds(x, y, width, height)` bepaal je voor elke componet de exactie positie binnen het paneel. De volgorde waarin je de componenten toevoegt, is nu onbelangrijk.
+Door de lay-outmanager volledig uit te schakelen, kan je de componenten tot op de pixel juist positioneren. Met `setBounds(x, y, width, height)` bepaal je voor elke component de exacte positie binnen het paneel. De volgorde waarin je de componenten toevoegt, is nu onbelangrijk.
 
 ```java
 class Paneel extends JPanel {
@@ -91,7 +91,7 @@ class Paneel extends JPanel {
 
 ##GridLayout
 
-De gridlay-out verdeelt het paneel in secties volgens een tabelvorm. Alle rijen zijn even breed en alle kolommen zijn even even hoog `GridLayout(rows, colomns, padding X, padding y)`. Gebruik eventueel een border om het grid van de rand te verwijderen. Border is inderdaal van de package `javax.swing.border.*`  
+De gridlay-out verdeelt het paneel in secties volgens een tabelvorm. Alle rijen zijn even breed en alle kolommen zijn even hoog `GridLayout(rows, colomns, padding X, padding y)`. Gebruik eventueel een border om het grid van de rand te verwijderen. Border is een onderdeel van de package `javax.swing.border.*`  
 
 ```java
 class Paneel extends JPanel {

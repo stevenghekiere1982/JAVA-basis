@@ -10,7 +10,7 @@ Elke applicatie bestaat uit een venster (een **frame**) dat later wordt ingevuld
 
 De opstartklasse zorgt alleen voor het maken van een JFrame-object. Het frame is voorlopig leeg, en heeft enkel een titel en een sluitknop. Om het vesnter ook inhoud te geven, voegen we later een [JPanel](JPanel.md) toe.
 
-**LET OP:** de *naam van de opstartklasse* (gebruikt op lijnen 4 en 6) MOET identiek zijn aan de *naam van java-bestand*. In dit voorbeeld noemt het java-bestand ***voorbeeld.java***.
+**LET OP:** de *naam van de opstartklasse* (gebruikt op lijnen 4 en 6) MOET identiek zijn aan de *naam van het java-bestand*. In dit voorbeeld noemt het java-bestand ***voorbeeld.java***.
 
 ```java
 import javax.swing.*;
@@ -35,7 +35,7 @@ JFrame frame = new Voorbeeld();
 Voorbeeld frame = new Voorbeeld();
 ```
 
-## Een frame met geleurde achtergrond.
+## Een frame met een gekleurde achtergrond.
 
 Importeer **java.awt.\*** (lijn 1) en kleur de achtergrond geel (lijn 7).  
 De default kleurwaardes vindt u in [java.awt.Color](http://docs.oracle.com/javase/7/docs/api/java/awt/Color.html).

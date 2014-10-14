@@ -18,13 +18,13 @@ U kan deze samenvatting offline lezen met de [MarkView plug-in](http://shaneweng
 | Shortcut        | Actie  |
 | ------------- | -----|
 | `Ctrl+r` | Naam van een variabele globaal vervangen |
-| `Ctrl+shift+c` | Zet een gans blok code in/uit commentaar |
+| `Ctrl+shift+c` | Zet een volledig blok code in/uit commentaar |
 | `Ctrl+shift+i` | Voeg ontbrekende imports toe |
 | `Alt-Shift-F` | Herformateer decode |
 
 ## NetBeans Code Templates
 
-Code Templates zijn lettercombinaties waarmee u snel een basisitructuur op de pagina plaatste.   
+Code Templates zijn lettercombinaties waarmee u snel een basisstructuur op de pagina plaatste.   
 U vindt deze terug onder het menu: Tools -> Options -> Editor -> Code Templates (Language: Java).  
 
 Typ de lettercombinatie gevolgd door een tab om de code te plaatsen.
@@ -41,7 +41,7 @@ U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
 
 | Lettercombinatie |  | Actie  |
 | ------------- | ----- | -----|
-| `tmmain` | [code](codeTemplates/tmmain.md) | volledig basisiscript inc. JFrame, JPanel, ActionListener en paintComponent  |
+| `tmmain` | [code](codeTemplates/tmmain.md) | volledig basisscript inc. JFrame, JPanel, ActionListener en paintComponent  |
 | `tmaction` | [code](codeTemplates/custom.md#tmaction) | ActionListener |
 | `tmpaint` | [code](codeTemplates/custom.md#tmpaint) | paintComponent |
 | `tmpanel` | [code](codeTemplates/custom.md#tmpanel) | JPanel met ActionListener |
@@ -68,12 +68,12 @@ U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
 
 ## Primitieve data-types
 
-Java kent **acht primitieve data-typen** die géén objecten zijn:  
+Java kent **acht primitieve datatypes** die géén objecten zijn:  
 `boolean`, `char`, `byte`, `short`, `int`, `long`, `float` en `double`.  
-Deze datatypen zijn puur bestemd om allerlei waarden op te slaan en rekenkundig bewerkingen op uit te voeren.  
+Deze datatypes zijn puur bestemd om allerlei waarden op te slaan en rekenkundige bewerkingen op uit te voeren.  
 
-Voor elk van deze datatypen bestaat wel een zogenaamde wrapper object (omhulzen, omwikkelen): `Boolean`, `Character`, `Byte`, `Short`, `Integer`, `Long`, `Float` en `Double`. 
-Met zo'n wrapper-object kun je o.a. de primitieve datatypen converteren naar strings (met de *toString()* methode) of omgekeerd (met o.a. de *parse* methoden). Ook kun je hiermee primitieve datatypen converteren naar wrapper objecten of omgekeerd.
+Voor elk datatype bestaat wel een zogenaamd wrapper object (omhulzen, omwikkelen): `Boolean`, `Character`, `Byte`, `Short`, `Integer`, `Long`, `Float` en `Double`. 
+Met zo'n wrapper-object kun je o.a. de primitieve datatypes converteren naar strings (met de *toString()* methode) of omgekeerd (met o.a. de *parse* methoden). Ook kun je hiermee primitieve datatypes converteren naar wrapper objecten of omgekeerd.
 
 ###Gehele getallen
 

@@ -7,7 +7,7 @@ Package: [java.lang.String](http://docs.oracle.com/javase/7/docs/api/java/lang/S
 Voor het formatteren van getallen in de uitvoer, gebruik je best  `String.format(Locale l, String format, Object... args)`. De landinstelling (`Local l`) is optioneel.
 
 - Het formaat begint steeds met **%**
-- Het formaat eindigt op **f** (voor kommagetallen), op **d** (voor gehele getallen) of op **s** (voor strings)
+- Het formaat eindigt op **f** (voor kommagetallen), op **d** (voor gehele getallen) of op **s** (voor strings).
 - Het aantal cijfers wordt aangegeven met **x.y**.  
 **x** is het totaal aantal karakters van de string (incl. komma).  
 **y** is het aantal cijfers na de komma.
@@ -28,7 +28,7 @@ Voor het formatteren van getallen in de uitvoer, gebruik je best  `String.format
 
 ###Gehele getallen formatteren (formaat eindigt steeds op f)
 
-`double g = 1234.56`  (witruimtes worden ter illustratie weergegeven met een -teken). Let ook op de punt en de komma!
+`double g = 1234.56`  (witruimtes worden ter illustratie weergegeven met een -teken). Let ook op het punt en de komma!
 
 | format specifier | resultaat |
 | ---------------- | --------- |
