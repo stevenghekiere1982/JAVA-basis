@@ -11,6 +11,7 @@ U kan deze samenvatting offline lezen met de [MarkView plug-in](http://shaneweng
 - [NetBeans Code Templates](#netbeans-code-templates)
 - [JAVA packages](#java-packages)
 - [Primitieve data-types](#primitieve-data-types)
+- [Keuzes en herhalingen](#keuzes-en-herhalingen)
 - [Links](#links)
 
 ## NetBeans shortcuts
@@ -36,6 +37,9 @@ Enkele voorbeelden van voorgedefinieerde templates:
 | `psvm` | methode main() |
 | `sout` | methoden System.out.println() |
 | `soutv` | methode System.out.println() met variabele |
+| `if` | if statement |
+| `ife` | if-else statement |
+| `ws` | switch statement |
 
 U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
 
@@ -105,6 +109,16 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 *   **Strings (en getallen) formatteren**
 
     > [String.Format()](string/format.md)
+
+##Keuzes en herhalingen
+
+*   **Keuzes**
+
+    > [if](keuze_herhaling/if.md) - [if-else](keuze_herhaling/if.md) - [if-else if-else](keuze_herhaling/if.md) - [switch](keuze_herhaling/switch.md)   
+    > [switch](keuze_herhaling/switch.md)
+*   **Herhalingen**
+
+    > [for](keuze_herhaling/for.md) - [while](keuze_herhaling/for.md) - [do-while](keuze_herhaling/for.md)
 
 ## Links
 

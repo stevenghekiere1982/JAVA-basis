@@ -37,3 +37,4 @@ class Paneel extends JPanel {
     }
 }
 ````
+##JLabel met HTML-tags
