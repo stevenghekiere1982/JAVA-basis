@@ -2,9 +2,9 @@
 
 ---
 
-##switch
+##Switch
 
-Net zaols een `if-else if-else` test je met een `switch` een variabele in functie van een aantal voorgedefinieerde waardes.
+Net zoals een `if-else if-else` test je met een `switch` een variabele in functie van een aantal voorgedefinieerde waardes.
 
 ```java
 int getal = Integer.parseInt(g.getText());
@@ -25,15 +25,15 @@ switch (getal) {
 lbl.setText(txt);
 ```
 
-getal wordt vergeleken met de eerste case voorwaarde. Indien beide waardes
-overeenstemmen, worden de bijbehorende statements uitgevoerd. Break zorgt ervoor dat men niet in een volgende case terechtkomt. Indien de voorwaarde niet waar is, gaan we verder naar de volgende case enz…  
-Indien geen enkele voorwaarde voldoet, wordt het `default` statement uitgevoerd.
+De variabele *getal* wordt vergeleken met de eerste case voorwaarde. Indien beide waardes
+overeenstemmen, worden de bijbehorende statements uitgevoerd. *Break* zorgt ervoor dat men niet in een volgende case terechtkomt. Indien de voorwaarde niet waar is, gaan we verder naar de volgende case enz…  
+Indien geen enkele voorwaarde voldoet, wordt het *default* statement uitgevoerd.
 
-**Let op dat u de break niet vergeet!** Anders loopt het programma altijd verder in de volgende case en bekom je een foutief resultaat.
+**Let op dat je de *break* niet vergeet!** Anders loopt het programma altijd verder in de volgende case en bekom je een foutief resultaat.
 
-###Zelfde resultaat met: if-else if-else
+###Zelfde resultaat met: if-else
 
- Het resultaat van onderstaande code is in identiek aan deze van voorgaand voorbeeld.
+ Het resultaat van onderstaande code is identiek aan deze van voorgaand voorbeeld.
 
 ```java
 int getal = Integer.parseInt(g.getText());

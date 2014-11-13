@@ -12,6 +12,7 @@ U kan deze samenvatting offline lezen met de [MarkView plug-in](http://shaneweng
 - [JAVA packages](#java-packages)
 - [Primitieve data-types](#primitieve-data-types)
 - [Keuzes en herhalingen](#keuzes-en-herhalingen)
+- [Klassen en objecten](#Klassen-en-objecten)
 - [Links](#links)
 
 ## NetBeans shortcuts
@@ -119,6 +120,16 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 *   **Herhalingen**
 
     > [for](keuze_herhaling/for.md) - [while](keuze_herhaling/for.md) - [do-while](keuze_herhaling/for.md)
+
+##Klassen en objecten
+
+*   **Klasse vs. object**
+
+    > [Klassen en objecten](klassen/klassen.md)
+
+*   **UML diagram**
+
+    > [UML diagram](klassen/UML.md)
 
 ## Links
 
