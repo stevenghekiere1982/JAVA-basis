@@ -129,7 +129,7 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 
 *   **UML diagram**
 
-    > [UML diagram](klassen/UML.md)
+    > [UML diagram](klassen/uml.md)
 
 ## Links
 
