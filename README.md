@@ -12,6 +12,7 @@ U kan deze samenvatting offline lezen met de [MarkView plug-in](http://shaneweng
 - [JAVA packages](#java-packages)
 - [Primitieve data-types](#primitieve-data-types)
 - [Keuzes en herhalingen](#keuzes-en-herhalingen)
+- [UML-diagrammen](UML/uml.md)
 - [Klassen en objecten](#Klassen-en-objecten)
 - [Links](#links)
 
@@ -129,7 +130,7 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 
 *   **UML diagram**
 
-    > [UML diagram](klassen/uml.md)
+    > [UML diagram](UML/uml.md)
 
 ## Links
 
