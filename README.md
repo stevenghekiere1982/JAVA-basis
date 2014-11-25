@@ -124,13 +124,9 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 
 ##Klassen en objecten
 
-*   **Klasse vs. object**
+*   **Klassen en objecten**
 
-    > [Klassen en objecten](klassen/klassen.md)
-
-*   **UML diagram**
-
-    > [UML diagram](UML/uml.md)
+    > [Klassen vs objecten](klassen/klassen.md) - [UML diagram](UML/uml.md) - [Javadoc](javadoc/javadoc.md)
 
 ## Links
 
