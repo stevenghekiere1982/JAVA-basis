@@ -200,7 +200,7 @@ grootste getal = 8
 
 ###Lengte van een array wijzigen.
 
-...
+Zie `System.arraycopy()`.
 
 ##Twee-dimentionele array.
 
