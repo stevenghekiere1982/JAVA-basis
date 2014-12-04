@@ -41,19 +41,58 @@ int[] arr = new int[] {1, 8, 6};    // Nu geen aantal tussen de rechte haakjes i
 System.out.println("arr = " + Arrays.toString(arr));
 ````
 
-Voor alle drie de methodes is de uitvoer identiek: `arr = [1, 8, 6]`
+Korter dan dit kan niet:
+
+````java
+int[] arr = {1, 8, 6};    // new int[] is zelfs overbodig
+System.out.println("arr = " + Arrays.toString(arr));
+````
+
+Voor alle vier de methodes is de uitvoer identiek: `arr = [1, 8, 6]`
 
 ##Elementen uit een array ophalen/wijzigen.
 
-...
+- Binnen een **for-lus** kan je waardes **uitlezen en aanpassen**.  
+- Binnen een **for-each-lus** kan je enkel waardes **uitlezen**. (Aanpassen is niet mogelijk.)
 
 ###Met een for-lus.
 
-...
+````java
+int[] arr = {1, 8, 6};
+for (int i = 0; i < arr.length; i++) {
+    System.out.println("arr[" + i +"] = " + arr[i]);    // Uitlezen
+    arr[i] = arr[i] + 20;   // Tel bij elke waarde 20 bij
+}
+System.out.println("----------------");
+System.out.println("arr = " + Arrays.toString(arr));
+````
+
+Uitvoer: 
+
+````java
+arr[0] = 1
+arr[1] = 8
+arr[2] = 6
+----------------
+arr = [21, 28, 26]
+````
 
 ###Met een for-each-lus.
 
-...
+````java
+int[] arr = {1, 8, 6};
+for (int waarde : arr) {
+    System.out.println(waarde);
+}
+````
+
+Uitvoer: 
+
+````java
+1
+8
+6
+````
 
 ##Een array kopiëren.
 Een array kopiëren naar een andere array gaat niet zomaar!
@@ -61,7 +100,7 @@ Een array kopiëren naar een andere array gaat niet zomaar!
 ###Ondiepe kopie (shallow copy)
 
 ````java
-int[] arr1 = new int[] {1, 8, 6};
+int[] arr1 = {1, 8, 6};
 int[] arr2 = arr1;                  // Ondiepe kopie
 
 System.out.println("arr1 = " + Arrays.toString(arr1));
@@ -88,7 +127,7 @@ arr2 = [5555, 8, 6]
 ###Diepe kopie (deep copy) met clone()
 
 ````java
-int[] arr1 = new int[] {1, 8, 6};
+int[] arr1 = {1, 8, 6};
 int[] arr2 = arr1.clone();          // Diepe kopie: met methode clone()
 
 System.out.println("arr1 = " + Arrays.toString(arr1));
@@ -115,7 +154,7 @@ arr2 = [1, 8, 6]
 ###Diepe kopie (deep copy) met System.arraycopy()
 
 ````java
-int[] arr1 = new int[] {1, 8, 6};
+int[] arr1 = {1, 8, 6};
 int[] arr2 = new int[8];
 
 System.out.println("arr1 = " + Arrays.toString(arr1));
@@ -146,7 +185,7 @@ arr2 = [1, 8, 6, 0, 0, 0, 0, 0]
 ###Sorteren (van laag naar hoog).
 
 ````java
-int[] arr1 = new int[] {1,8,6,2,4,7};
+int[] arr1 = {1,8,6,2,4,7};
 System.out.println("arr1 = " + Arrays.toString(arr1));
 Arrays.sort(arr1);              // Sorteer van laag naar hoog
 System.out.println("arr1 = " + Arrays.toString(arr1));
@@ -162,7 +201,7 @@ arr1 = [1, 2, 4, 6, 7, 8]
 ###Sorteren (van hoog naar laag).
 
 ````java
-int[] arr1 = new int[] {1,8,6,2,4,7};
+int[] arr1 = {1,8,6,2,4,7};
 Arrays.sort(arr1);      // Sorteer van laag naar hoog
 System.out.println("arr1 (laag > hoog) = " + Arrays.toString(arr1));
         
@@ -185,7 +224,7 @@ arr1 (hoog > laag) = [8, 7, 6, 4, 2, 1]
 ###Kleinste en grootste getal ophalen.
 
 ````java
-int[] arr1 = new int[] {1,8,6,2,4,7};
+int[] arr1 = {1,8,6,2,4,7};
 Arrays.sort(arr1);
 System.out.println("kleinste getal = " + arr1[0]);
 System.out.println("grootste getal = " + arr1[arr1.length-1]);
@@ -202,6 +241,28 @@ grootste getal = 8
 
 Zie `System.arraycopy()`.
 
-##Twee-dimentionele array.
+##Tweedimensionale array.
 
-...
+Een tweedimensionale array kan je best vergelijken mat een tabel, met een matrix of met een spreadsheet.
+
+````java
+// array (tabel) van 3 rijen en 5 kolommen        
+int[][] matrix = {{5, 2, 8, 7, 4}, {2, 1, 8, 6, 0} ,{8, 5, 7, 2, 6} };
+System.out.println("matrix[0] = " + Arrays.toString(matrix[0]));
+System.out.println("matrix[1] = " + Arrays.toString(matrix[1]));
+System.out.println("matrix[2] = " + Arrays.toString(matrix[2]));
+System.out.println("----------------");
+System.out.println("aantal rijen = " + matrix.length);
+System.out.println("aantal kolommen = " + matrix[0].length);
+````
+
+Uitvoer: 
+
+````java
+matrix[0] = [5, 2, 8, 7, 4]
+matrix[1] = [2, 1, 8, 6, 0]
+matrix[2] = [8, 5, 7, 2, 6]
+----------------
+aantal rijen = 3
+aantal kolommen = 5
+````
