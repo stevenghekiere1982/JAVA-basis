@@ -35,6 +35,7 @@ class Paneel extends JPanel {
     class BtnHandler implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             btn.setText("Click");
+            repaint();
         }
     }
     
