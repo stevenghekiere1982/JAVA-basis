@@ -21,7 +21,7 @@ class Paneel extends JPanel {
     private JButton btn;
     private JTextField txt;
     
-    // Paneel
+    // Paneel (constructor)
     public Paneel() {
         setBackground(Color.WHITE);
         btn = new JButton("Button");
@@ -31,17 +31,17 @@ class Paneel extends JPanel {
         add(txt);
     }
     
-    // Event handler
+    // Event handler (interne klasse)
     class BtnHandler implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             btn.setText("Click");
-            repaint();
+            repaint();      // voer paintComponent() opnieuw uit
         }
     }
     
-    // Paint component
+    // Paint component (interne klasse)
     public void paintComponent(Graphics g){
-        super.paintComponent(g);
+        super.paintComponent(g);    // wis inhoud van JPanel
         g.setColor(Color.red);
         g.drawString("Txt", 20, 20);
     }
