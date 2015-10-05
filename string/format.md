@@ -14,7 +14,7 @@ Voor het formatteren van getallen in de uitvoer, gebruik je best  `String.format
 - String links uitlijnen: begin het formaat met **%-**
 - Voorloopnullen tonen: begin het formaat met **%0**
 
-###Kommagetallen formatteren (formaat eindigt steeds op d)
+###Gehele getallen formatteren (formaat eindigt steeds op d)
 
 `int g = 12345`  (witruimtes worden ter illustratie weergegeven met een -teken).
 
@@ -26,7 +26,7 @@ Voor het formatteren van getallen in de uitvoer, gebruik je best  `String.format
 | String.format("%-10d", g)| 12345----- |
 | String.format("%010d", g)| 0000012345 |
 
-###Gehele getallen formatteren (formaat eindigt steeds op f)
+###Kommagetallen formatteren (formaat eindigt steeds op f)
 
 `double g = 1234.56`  (witruimtes worden ter illustratie weergegeven met een -teken). Let ook op het punt en de komma!
 
