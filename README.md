@@ -83,8 +83,8 @@ Met zo'n wrapper-object kun je o.a. de primitieve datatypes converteren naar str
 
 ###Gehele getallen
 
-| type |  wrapper  |bits | String naar getal| getal naar String | Type Casting |
-| ------------- | -----|----------------- |  ---- | ---- | ----|
+| type |  wrapper  |bits | String (bv: "5") naar getal| getal naar String | Type Casting |
+| ------------- | -----|------------------ |  ---- | ---- | ----|
 | byte |  Byte | 8 | Byte.parseByte("string") | "" + getal | (byte) getal |
 | short | Short| 16 | Short.parseShort("string") | "" + getal |  (short) getal |
 | int |Integer| 32 |  Integer.parseInt("string") | "" + getal | (int) getal |
@@ -92,10 +92,10 @@ Met zo'n wrapper-object kun je o.a. de primitieve datatypes converteren naar str
 
 ### Kommagetallen
 
-| type |  wrapper  |bits | String naar getal| getal naar String | Type Casting |
+| type |  wrapper  |bits | String (bv: "5.7") naar getal| getal naar String | Type Casting |
 | ------------- | -----|----------------- |  --- | ---- | ----|
-| float | Float| 32 | Float.parseFloat("5.7") | "" + getal | (float) getal |
-| double | Double|  64 |  Double.parseDouble("5.7") | "" + getal | (double) getal |
+| float | Float| 32 | Float.parseFloat("string") | "" + getal | (float) getal |
+| double | Double|  64 |  Double.parseDouble("string") | "" + getal | (double) getal |
 
 ### Overige
 
