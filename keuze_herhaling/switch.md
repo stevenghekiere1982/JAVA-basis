@@ -50,6 +50,18 @@ if(getal == 0) {
 lbl.setText(txt);
 ```
 
+###Beperkingen met switch-statement
 
+Er zijn heel wat beperkingen op het switch-statement in Java. Zie vergelijkend overzicht in onderstaande tabel.
 
-
+| type   |  if-else  | switch |
+| ----   | ----     -| -------|
+| byte   |  x | x |
+| short  |  x | x |
+| int    |  x | x |
+| long   |  x | - |
+| float  |  x | - |
+| double |  x | - |
+| char   |  x | x |
+| boolean|  x | - |
+| String |  - | - |

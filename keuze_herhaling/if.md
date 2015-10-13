@@ -2,6 +2,9 @@
 
 ---
 
+Belangrijk: onderstaande instructies werken niet voor stringvergelijkingen!   
+Zie: strings vergelijken met [equals](equals.md).
+
 ##if
 
 Indien een bepaalde voorwaarde `waar` is, voer dan alle instructies uit binnen het if-blok.
@@ -48,6 +51,10 @@ if(getal%2 == 0) {
 } else {
     eo = "oneven";
 }
+
+// verkorte schrijfwijze (zonder accolades)
+if(getal%2 == 0) eo = "even";
+else eo = "oneven";
 
 // verkorte schrijfwijze
 // variabele = (voorwaarde) ? waarde indien waar : waarde indien niet waar ;

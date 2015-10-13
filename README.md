@@ -3,7 +3,7 @@ JAVA-basis (Swing)
 
 Samenvatting cursus JAVA basis Thomas More Kempen: Elektronica-ICT.
 
-U kan deze samenvatting offline lezen met de [MarkView plug-in](http://shaneweng.com/blog/view-markdown-file-with-markview/) voor Chrome. Vink zeker de optie "Allow access to file URLs" aan in [chrome://extensions/](chrome://extensions/)
+U kan deze samenvatting offline lezen met de [markdown-preview plug-in](https://github.com/volca/markdown-preview) voor Chrome. Vink zeker de optie "Allow access to file URLs" aan in [chrome://extensions/](chrome://extensions/)
 
 ## Inhoudstafel
 
@@ -116,8 +116,9 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 
 *   **Keuzes**
 
-    > [if](keuze_herhaling/if.md) - [if-else](keuze_herhaling/if.md) - [if-else if-else](keuze_herhaling/if.md) - [switch](keuze_herhaling/switch.md)   
-    > [switch](keuze_herhaling/switch.md)
+    > [if](keuze_herhaling/if.md) - [if-else](keuze_herhaling/if.md) - [if-else if-else](keuze_herhaling/if.md)   
+    > [switch](keuze_herhaling/switch.md)  
+    > strings vergelijken met [equals](keuze_herhaling/equals.md)
 *   **Herhalingen**
 
     > [for](keuze_herhaling/for.md) - [while](keuze_herhaling/for.md) - [do-while](keuze_herhaling/for.md)
