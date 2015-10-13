@@ -1,6 +1,5 @@
 #Keuzes (switch)
 
----
 
 ##Switch
 
@@ -55,7 +54,7 @@ lbl.setText(txt);
 Er zijn heel wat beperkingen op het switch-statement in Java. Zie vergelijkend overzicht in onderstaande tabel.
 
 | type   |  if-else  | switch |
-| ----   | ----     -| -------|
+| ------ | --------- | -------|
 | byte   |  x | x |
 | short  |  x | x |
 | int    |  x | x |
@@ -65,3 +64,4 @@ Er zijn heel wat beperkingen op het switch-statement in Java. Zie vergelijkend o
 | char   |  x | x |
 | boolean|  x | - |
 | String |  - | - |
+

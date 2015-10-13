@@ -1,6 +1,5 @@
 #Keuzes (if)
 
----
 
 Belangrijk: onderstaande instructies werken niet voor stringvergelijkingen!   
 Zie: strings vergelijken met [equals](equals.md).
