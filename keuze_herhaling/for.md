@@ -39,11 +39,10 @@ do {
 } while (voorwaarde);
 ```
 
-In onderstaand voorbeeld geven een for, een while en een do-while lus net hetzelfde resultaat.
+##Voorbeeld for, while en do-while met gehele getallen (int).
 
 ```java
-int van = 10, tot = 20;
-int i;
+int van = 10, tot = 20, i;
 String resultaat;
         
 System.out.println("For statement:");
@@ -95,6 +94,95 @@ While statement:
 Do-while statement:
 10,
 ```
+
+## Voorbeeld for, while en do-while met kommagetallen (float).
+
+```java
+float van = 5, tot = 8, i;
+String resultaat;
+        
+System.out.println("For statement:");
+resultaat = "";
+i = van;
+for (i = van; i <= tot; i += .5) {  // stap van 0.5
+     resultaat += i + ", ";
+}
+System.out.println(resultaat);
+        
+System.out.println("While statement:");
+resultaat = "";
+i = van;
+while (i <= tot) {
+    resultaat += i + ", ";
+    i += .5;        // stap van 0.5
+}
+System.out.println(resultaat);
+        
+System.out.println("Do-while statement:");
+resultaat = "";
+i = van;
+do {
+    resultaat += i + ", ";
+    i += .5;        // stap van 0.5
+} while (i <= tot);
+System.out.println(resultaat);
+```
+
+Resultaat:
+
+```java
+For statement:
+5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0,   
+While statement:
+5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0,   
+Do-while statement:
+5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0,   
+```
+
+## Voorbeeld for, while en do-while met karakters (char).
+
+```java
+char van = 'a', tot = 'p', i;
+String resultaat;
+        
+System.out.println("For statement:");
+resultaat = "";
+i = van;
+for (i = van; i <= tot; i++) {  // stap van 1 karakter
+     resultaat += i + ", ";
+}
+System.out.println(resultaat);
+        
+System.out.println("While statement:");
+resultaat = "";
+i = van;
+while (i <= tot) {
+    resultaat += i + ", ";
+    i++;        // stap van 1 karakter
+}
+System.out.println(resultaat);
+        
+System.out.println("Do-while statement:");
+resultaat = "";
+i = van;
+do {
+    resultaat += i + ", ";
+    i++;        // stap van 1 karakter
+} while (i <= tot);
+System.out.println(resultaat);
+```
+
+Resultaat:
+
+```java
+For statement:
+a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p,  
+While statement:
+a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p,    
+Do-while statement:
+a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p,  
+```
+
 
 
 
