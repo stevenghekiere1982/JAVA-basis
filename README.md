@@ -114,8 +114,8 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 
 ##Keuzes en herhalingen
 
-|     | [if-else](keuze_herhaling/if.md)  | [switch](keuze_herhaling/switch.md) | [equals](keuze_herhaling/equals.md)  | [for](keuze_herhaling/for.md) | [while](keuze_herhaling/for.md) | [do-while](keuze_herhaling/for.md) |
-| ------ | - | - | - | - | - | - | - |
+| type   | [if-else](keuze_herhaling/if.md)  | [switch](keuze_herhaling/switch.md) | [equals](keuze_herhaling/equals.md)  | [for](keuze_herhaling/for.md) | [while](keuze_herhaling/for.md) | [do-while](keuze_herhaling/for.md) |
+| ------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | byte   | x | x | - | x | x | x |
 | short  | x | x | - | x | x | x |
 | int    | x | x | - | x | x | x |
