@@ -114,14 +114,18 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 
 ##Keuzes en herhalingen
 
-*   **Keuzes**
+|     | [if-else](keuze_herhaling/if.md)  | [switch](keuze_herhaling/switch.md) | [equals](keuze_herhaling/equals.md)  | [for](keuze_herhaling/for.md) | [while](keuze_herhaling/for.md) | [do-while](keuze_herhaling/for.md) |
+| ------ | - | - | - | - | - | - | - |
+| byte   | x | x | - | x | x | x |
+| short  | x | x | - | x | x | x |
+| int    | x | x | - | x | x | x |
+| long   | x | - | - | x | x | x |
+| float  | x | - | - | x | x | x |
+| double | x | - | - | x | x | x |
+| char   | x | x | - | x | x | x |
+| boolean| x | - | x | - | - | - |
+| String | - | - | x | - | - | - |
 
-    > [if](keuze_herhaling/if.md) - [if-else](keuze_herhaling/if.md) - [if-else if-else](keuze_herhaling/if.md)   
-    > [switch](keuze_herhaling/switch.md)  
-    > strings vergelijken met [equals](keuze_herhaling/equals.md)
-*   **Herhalingen**
-
-    > [for](keuze_herhaling/for.md) - [while](keuze_herhaling/for.md) - [do-while](keuze_herhaling/for.md)
 
 ##Klassen en objecten
 
