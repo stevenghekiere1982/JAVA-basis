@@ -187,17 +187,18 @@ public class Rechthoek {
 
     // constructors
     public Rechthoek(){                     // no-arg constructor 
-        soort = "vierkant";
         lengte = 2.0;
         breedte = 1.0;
     }
     public Rechthoek(double x){             // constructor voor vierkant 
+        soort = "vierkant";
         lengte = x;
         breedte = x;
     }
-    public Rechthoek(double x, double y){   // constructor voor rechthoek 
+    public Rechthoek(double x, double y){   // constructor voor rechthoek/vierkant 
         lengte = x;
         breedte = y;
+        if (x == y) soort = "vierkant";
     }
 
     // Getters
@@ -275,7 +276,7 @@ voorbeeldrechthoek.Rechthoek@15db9742
 voorbeeldrechthoek.Rechthoek@15db9742
 ```
 
-De output is de naam van de klasse, gevolgd door @ en een hashcode die het object voorstelt.  
+De output is de naam van de klasse, gevolgd door @ en een hashcode (hexadecimaal formaat) die het object voorstelt.  
 Daarom bevatten de meeste klassen een eigen methode `toString()` die de default weergave overschrijft.  
 Ziehier de `toString()` methode die we vanuit het snelmenu in NetBeans automatisch laten genereren.
 
