@@ -56,10 +56,10 @@ class Rechthoek {
 
 ###Minimale methoden van de klasse Rechthoek (getters, setters)
 - Aangezien de *attributen* niet publiek toegankelijk zijn, gaan we via **setters** attribuutwaardes wijzigen en via **getters** attribuutwaardes opvragen.
-- **Getter** (*accessor*):  
+- **Getter** (*accessor* of toegang toy):  
 De naam begint met **get** (of **is** voor een *boolean*), gevolgd door de naam van het attribuut.  
 Dus **getLengte()** en **getBreedte()**.  
-- **Setter** (*mutator*):  
+- **Setter** (*mutator* of veranderen):  
 De naam begint met **set**, gevolgd door de naam van het *attribuut*.  
 Dus **setLengte(4)** en **setBreedte(3)**.
 

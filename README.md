@@ -70,7 +70,7 @@ U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
     >  Boolean - Char - Double - Integer - Math - Object - String - StringBuffer - System
 *   **java.util.\***
 
-    >  [Array](javaUtil/array.md) - ArrayList - Local
+    >  [Array](javaUtil/array.md) - ArrayList - Local - [Calendar](http://tutorials.jenkov.com/java-date-time/java-util-calendar.html)
 
 ## Primitieve data-types
 
