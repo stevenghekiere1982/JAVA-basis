@@ -13,7 +13,8 @@ U kan deze samenvatting offline lezen met de [markdown-preview plug-in](https://
 - [Primitieve data-types](#primitieve-data-types)
 - [Keuzes en herhalingen](#keuzes-en-herhalingen)
 - [UML-diagrammen](UML/uml.md)
-- [Klassen en objecten](#Klassen-en-objecten)
+- [Klassen en objecten](#klassen-en-objecten)
+- [Array vs. ArrayList](#array-vs-arraylist)
 - [Links](#links)
 
 ## NetBeans shortcuts
