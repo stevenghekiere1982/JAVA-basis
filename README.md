@@ -131,7 +131,11 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 
 *   **Klassen en objecten**
 
-    > [Klassen vs objecten](klassen/klassen.md) - [UML diagram](UML/uml.md) - [Javadoc](javadoc/javadoc.md)
+    > [Klassen vs objecten](klassen/klassen.md) - [UML diagram](UML/uml.md) - [StarUML](http://staruml.io/) - [Javadoc](javadoc/javadoc.md)  
+    
+## Array vs. ArrayList
+ 
+ - [8 belangrijke verschillen tussen Array en ArrayList](http://javahungry.blogspot.com/2015/03/difference-between-array-and-arraylist-in-java-example.html)   
 
 ## Links
 
