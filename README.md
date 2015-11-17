@@ -141,12 +141,11 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 | Lengte | variabel | vast |
 | Resizable | x | - |
 | Elementen toevoegen | makkelijk | moeilijker |
-| Prestatie | afhankelijk van bewerking | afhankelijk van bewerking |
 | Primitieve datatypes | - | x |
 | Objecten | x | x |
 | Multidimensioneel | - | x |
-| for-lus | waardes lezen/schrijven |waardes lezen/schrijven |
-| for-each-lus | waardes lezen |waardes lezen |
+| for-lus | waardes lezen/schrijven | waardes lezen/schrijven |
+| for-each-lus | enkel waardes lezen | enkel waardes lezen |
  
 
 ## Links
