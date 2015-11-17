@@ -11,7 +11,7 @@ Als je uit een Array een elementen verwijderd, zal het geheugengebruik hetzelfde
 Anderzijds kan een ArrayList dynamisch groeien en krimpen volgens de behoefte.  
 
 
-##Een array aanmaken.
+##Een ArrayList aanmaken.
 
 Merk op dat een ArrayList **enkel objecten** ondersteunt en **geen primitieve types**!
 
