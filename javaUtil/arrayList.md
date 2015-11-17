@@ -7,13 +7,13 @@ Package: [java.util.ArrayList](http://docs.oracle.com/javase/7/docs/api/java/uti
 - Een ArrayList is, net zoals een array, een object waarin je soortgelijke gegevens (objecten of waarden van hetzelfde type) kan stockeren.  
 - Het merendeel van de ontwikkelaars verkiezen een ArrayList boven een Array vanwege de functionaliteit en de flexibiliteit die een ArrayList biedt.  
 - Het probleem met Arrays is dat ze een vaste lengte hebben. ArrayLists hebben geen vaste lengte en zijn dus makkelijk uitbreidbaar.  
-Als je uit een array elementen verwijderd, zal het geheugengebruik hetzelfde blijven omdat deze niet krimpt.  
+Als je uit een Array een elementen verwijderd, zal het geheugengebruik hetzelfde blijven omdat de Array niet krimpt.  
 Anderzijds kan een ArrayList dynamisch groeien en krimpen volgens de behoefte.  
 
 
 ##Een array aanmaken.
 
-Merk op dat een ArrayList enkel objecten ondersteunt en geen primitieve types!
+Merk op dat een ArrayList **enkel objecten** ondersteunt en **geen primitieve types**!
 
 ````java
 ArrayList <Double> puntenLijst = new ArrayList <> ();   
@@ -40,7 +40,7 @@ Collections.sort(puntenLijst);      // sorteer de elementen van laag naar hoog
 Collections.sort(puntenLijst, Collections.reverseOrder());  // sorteer de elementen van hoog naar laag
 ````
 
-##Elementen uit een array ophalen/wijzigen.
+##Elementen uit een ArrayList ophalen/wijzigen.
 
 - Binnen een **for-lus** kan je waardes **uitlezen en aanpassen**.  
 - Binnen een **for-each-lus** kan je enkel waardes **uitlezen**. (Aanpassen is niet mogelijk.)
@@ -100,10 +100,7 @@ Uitvoer:
 [5.0, 7.5, 8.2, 12.6]
 ````
 
-##Een array kopiëren.
-Een array kopiëren naar een andere array gaat niet zomaar!
-
-###Ondiepe kopie (shallow copy)
+##Een ArrayList kopiëren (ondiepe kopie of shallow copy).
 
 ````java
 ArrayList <Double> puntenLijst = new ArrayList <> ();

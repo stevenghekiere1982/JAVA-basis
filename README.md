@@ -147,7 +147,6 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 | Multidimensioneel | - | x |
 | for-lus | waardes lezen/schrijven |waardes lezen/schrijven |
 | for-each-lus | waardes lezen |waardes lezen |
-| ------ | ---- | ---- |
  
 
 ## Links
