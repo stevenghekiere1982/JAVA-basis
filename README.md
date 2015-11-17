@@ -71,7 +71,7 @@ U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
     >  Boolean - Char - Double - Integer - Math - Object - String - StringBuffer - System
 *   **java.util.\***
 
-    >  [Array](javaUtil/array.md) - ArrayList - Local - [Calendar](http://tutorials.jenkov.com/java-date-time/java-util-calendar.html)
+    >  [Array](javaUtil/array.md) - [ArrayList](javaUtil/arrayList.md) - Local - [Calendar](http://tutorials.jenkov.com/java-date-time/java-util-calendar.html)
 
 ## Primitieve data-types
 
@@ -135,8 +135,20 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
     > [Klassen vs objecten](klassen/klassen.md) - [UML diagram](UML/uml.md) - [StarUML](http://staruml.io/) - [Javadoc](javadoc/javadoc.md)  
     
 ## Array vs. ArrayList
+
+| mogelijkheden | [ArrayList](javaUtil/arrayList.md) | [Array](javaUtil/array.md) |
+| ------ | ---- | ---- |
+| Lengte | variabel | vast |
+| Resizable | x | - |
+| Elementen toevoegen | makkelijk | moeilijker |
+| Prestatie | afhankelijk van bewerking | afhankelijk van bewerking |
+| Primitieve datatypes | - | x |
+| Objecten | x | x |
+| Multidimensioneel | - | x |
+| for-lus | waardes lezen/schrijven |waardes lezen/schrijven |
+| for-each-lus | waardes lezen |waardes lezen |
+| ------ | ---- | ---- |
  
- - [8 belangrijke verschillen tussen Array en ArrayList](http://javahungry.blogspot.com/2015/03/difference-between-array-and-arraylist-in-java-example.html)   
 
 ## Links
 
@@ -144,3 +156,7 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 - [https://sites.google.com/site/cursusguielien/](https://sites.google.com/site/cursusguielien/)
 - [http://www.java2s.com/](http://www.java2s.com/)
 - [animal classification](http://kendeanagudo.hubpages.com/hub/Facts-about-Animals-Its-Types-and-Classification#)
+- [8 belangrijke verschillen tussen Array en ArrayList](http://javahungry.blogspot.com/2015/03/difference-between-array-and-arraylist-in-java-example.html)  
+- [how to use arraylist](http://examples.javacodegeeks.com/core-java/util/arraylist/arraylist-in-java-example-how-to-use-arraylist/)
+- [Loop ArrayList](http://beginnersbook.com/2013/12/how-to-loop-arraylist-in-java/)
+- [http://beginnersbook.com/](http://beginnersbook.com/)
