@@ -60,8 +60,8 @@ U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
 *   **javax.swing.\***
 
     > [JFrame](swing/JFrame.md) - [JPanel](swing/JPanel.md)   
-    > [JButton](swing/JButton.md) - [JLabel](swing/JLabel.md) - [JTextField](swing/JTextField.md)  
-    > border - BorderFactory - JScrollPane 
+    > [JButton](swing/JButton.md) - [JLabel](swing/JLabel.md) - [JTextField](swing/JTextField.md)  - [JTextArea](swing/JTextArea.md)  
+    > Border - BorderFactory - [JScrollPane](swing/JTextArea.md) (zie voorbeeld JTextArea)
 *   **java.awt.event.\***
 
     >  ActionEvent - ActionListener
