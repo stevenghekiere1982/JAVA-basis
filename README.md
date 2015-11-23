@@ -43,6 +43,8 @@ Enkele voorbeelden van voorgedefinieerde templates:
 | `if` | if statement |
 | `ife` | if-else statement |
 | `ws` | switch statement |
+| `for` | for loop |
+| `fore` | for-each loop (Array en ArrayList) |
 
 U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
 
