@@ -6,7 +6,7 @@ Package: [javax.swing.JTextArea](http://docs.oracle.com/javase/7/docs/api/javax/
 class Paneel extends JPanel { 
     private JTextArea area;
     public Paneel() {
-        area = new JTextArea(10,30);
+        area = new JTextArea(10,30);  // 10 rijen, 30 kolommen
         area.setText("Lijn 1 \nLijn 2");
         add(area);
     }
@@ -26,12 +26,13 @@ class Paneel extends JPanel {
 class Paneel extends JPanel { 
     private JTextArea area;
     public Paneel() {
-        area = new JTextArea(10,30);
+        area = new JTextArea();
+        area.setPreferredSize(new Dimension(300, 200));   // 300px breed , 200px hoog
         area.setText("Lijn 1 \nLijn 2");
         area.setFont(new Font("MonoSpaced",Font.PLAIN,11));
         //area.setEditable(false);
         add(area);
-        add( new JScrollPane(area) );  //schuifbalk(en) plaatsen
+        add( new JScrollPane(area) );  //schuifbalk(en) plaatsen. Altijd NA add(area) !!!
     }
 }
 ````
