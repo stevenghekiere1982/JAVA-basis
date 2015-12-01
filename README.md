@@ -70,7 +70,7 @@ U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
     >  Color - FlowLayout - Font - Graphics - GridLayout - Polygon
 *   **java.lang.\***
 
-    >  Boolean - Char - Double - Integer - Math - Object - String - StringBuffer - System
+    >  Boolean - Char - Double - Integer - Math - Object - String - [StringBuffer](javaLang/stringBuffer.md) - System
 *   **java.util.\***
 
     >  [Array](javaUtil/array.md) - [ArrayList](javaUtil/arrayList.md) - Local - [Calendar](http://tutorials.jenkov.com/java-date-time/java-util-calendar.html)
