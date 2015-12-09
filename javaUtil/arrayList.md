@@ -23,11 +23,11 @@ ArrayList <Double> puntenLijst = new ArrayList <> ();
 
 ````java
 puntenLijst.add(7.5);           // voeg de waarde 7.5 achteraan de lijst toe 
-puntenLijst.add(4.3, 2);        // voeg de waarde 4.3 op de tweede positie toe 
-puntenLijst.set(2, 4.6);        // vervang het tweede element door de waarde 4.6
-puntenLijst.remove(3);          // verwijder het derde element uit de lijst
-puntenLijst.removeRange(2, 5);  // verwijder het tweede t.e.m. het vierde element uit de lijst
-puntenLijst.get(2);             // haal het tweede element uit de lijst op
+puntenLijst.add(4.3, 2);        // voeg de waarde 4.3 op de derde positie toe 
+puntenLijst.set(2, 4.6);        // vervang het derde element door de waarde 4.6
+puntenLijst.remove(2);          // verwijder het derde element uit de lijst
+puntenLijst.removeRange(2, 5);  // verwijder het derde t.e.m. het vijfde element uit de lijst
+puntenLijst.get(2);             // haal het derde element uit de lijst op
 puntenLijst.clear();            // maak de lijst leeg
 puntenLijst.size();             // geef het aantal elementen in de lijst
 puntenLijst.toArray();          // maak van de lijst een gewone array
