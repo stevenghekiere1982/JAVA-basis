@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Java-basis by pverhaert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Java-basis</h1>
+      <h2 class="project-tagline">Samenvatting cursus JAVA basis TMK-ICT</h2>
+      <a href="https://github.com/pverhaert/JAVA-basis" class="btn">View on GitHub</a>
+      <a href="https://github.com/pverhaert/JAVA-basis/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/pverhaert/JAVA-basis/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="java-basis-swing" class="anchor" href="#java-basis-swing" aria-hidden="true"><span class="octicon octicon-link"></span></a>JAVA-basis (Swing)</h1>
+
+<p>Samenvatting cursus JAVA basis Thomas More Kempen: Elektronica-ICT.</p>
+
+<p>U kan deze samenvatting offline lezen met de <a href="https://github.com/volca/markdown-preview">markdown-preview plug-in</a> voor Chrome. Vink zeker de optie "Allow access to file URLs" aan in chrome://extensions/</p>
+
+<h2>
+<a id="inhoudstafel" class="anchor" href="#inhoudstafel" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inhoudstafel</h2>
+
+<ul>
+<li><a href="#netbeans-shortcuts">NetBeans shortcuts</a></li>
+<li><a href="#netbeans-code-templates">NetBeans Code Templates</a></li>
+<li><a href="#java-packages">JAVA packages</a></li>
+<li><a href="#primitieve-data-types">Primitieve data-types</a></li>
+<li><a href="#keuzes-en-herhalingen">Keuzes en herhalingen</a></li>
+<li><a href="UML/uml.md">UML-diagrammen</a></li>
+<li><a href="#klassen-en-objecten">Klassen en objecten</a></li>
+<li><a href="#array-vs-arraylist">Array vs. ArrayList</a></li>
+<li><a href="#links">Links</a></li>
+</ul>
+
+<h2>
+<a id="netbeans-shortcuts" class="anchor" href="#netbeans-shortcuts" aria-hidden="true"><span class="octicon octicon-link"></span></a>NetBeans shortcuts</h2>
+
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Actie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl+r</code></td>
+<td>Naam van een variabele globaal vervangen</td>
+</tr>
+<tr>
+<td><code>Ctrl+shift+c</code></td>
+<td>Zet een volledig blok code in/uit commentaar</td>
+</tr>
+<tr>
+<td><code>Ctrl+shift+i</code></td>
+<td>Voeg ontbrekende imports toe</td>
+</tr>
+<tr>
+<td><code>Alt-Shift-F</code></td>
+<td>Herformateer decode</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="netbeans-code-templates" class="anchor" href="#netbeans-code-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>NetBeans Code Templates</h2>
+
+<p>Code Templates zijn lettercombinaties waarmee u snel een basisstructuur op de pagina plaatste.<br>
+U vindt deze terug onder het menu: Tools -&gt; Options -&gt; Editor -&gt; Code Templates (Language: Java).  </p>
+
+<p>Typ de lettercombinatie gevolgd door een tab om de code te plaatsen.</p>
+
+<p>Enkele voorbeelden van voorgedefinieerde templates:</p>
+
+<table>
+<thead>
+<tr>
+<th>Lettercombinatie</th>
+<th>Actie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>psvm</code></td>
+<td>methode main()</td>
+</tr>
+<tr>
+<td><code>sout</code></td>
+<td>methoden System.out.println()</td>
+</tr>
+<tr>
+<td><code>soutv</code></td>
+<td>methode System.out.println() met variabele</td>
+</tr>
+<tr>
+<td><code>if</code></td>
+<td>if statement</td>
+</tr>
+<tr>
+<td><code>ife</code></td>
+<td>if-else statement</td>
+</tr>
+<tr>
+<td><code>ws</code></td>
+<td>switch statement</td>
+</tr>
+<tr>
+<td><code>for</code></td>
+<td>for loop</td>
+</tr>
+<tr>
+<td><code>fore</code></td>
+<td>for-each loop (Array en ArrayList)</td>
+</tr>
+</tbody>
+</table>
+
+<p>U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden</p>
+
+<table>
+<thead>
+<tr>
+<th>Lettercombinatie</th>
+<th></th>
+<th>Actie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tmmain</code></td>
+<td><a href="codeTemplates/tmmain.md">code</a></td>
+<td>volledig basisscript inc. JFrame, JPanel, ActionListener en paintComponent</td>
+</tr>
+<tr>
+<td><code>tmaction</code></td>
+<td><a href="codeTemplates/custom.md#tmaction">code</a></td>
+<td>ActionListener</td>
+</tr>
+<tr>
+<td><code>tmpaint</code></td>
+<td><a href="codeTemplates/custom.md#tmpaint">code</a></td>
+<td>paintComponent</td>
+</tr>
+<tr>
+<td><code>tmpanel</code></td>
+<td><a href="codeTemplates/custom.md#tmpanel">code</a></td>
+<td>JPanel met ActionListener</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="java-packages" class="anchor" href="#java-packages" aria-hidden="true"><span class="octicon octicon-link"></span></a>JAVA packages</h2>
+
+<ul>
+<li>
+<p><strong>javax.swing.\</strong>*</p>
+
+<blockquote>
+<p><a href="swing/JFrame.md">JFrame</a> - <a href="swing/JPanel.md">JPanel</a><br>
+<a href="swing/JButton.md">JButton</a> - <a href="swing/JLabel.md">JLabel</a> - <a href="swing/JTextField.md">JTextField</a>  - <a href="swing/JTextArea.md">JTextArea</a><br>
+Border - BorderFactory - <a href="swing/JTextArea.md">JScrollPane</a> (zie voorbeeld JTextArea)</p>
+</blockquote>
+</li>
+<li>
+<p><strong>java.awt.event.\</strong>*</p>
+
+<blockquote>
+<p>ActionEvent - ActionListener</p>
+</blockquote>
+</li>
+<li>
+<p><strong>java.awt.\</strong>*</p>
+
+<blockquote>
+<p>Color - FlowLayout - Font - Graphics - GridLayout - Polygon</p>
+</blockquote>
+</li>
+<li>
+<p><strong>java.lang.\</strong>*</p>
+
+<blockquote>
+<p>Boolean - Char - Double - Integer - Math - Object - String - <a href="javaLang/stringBuffer.md">StringBuffer</a> - System</p>
+</blockquote>
+</li>
+<li>
+<p><strong>java.util.\</strong>*</p>
+
+<blockquote>
+<p><a href="javaUtil/array.md">Array</a> - <a href="javaUtil/arrayList.md">ArrayList</a> - Local - <a href="http://tutorials.jenkov.com/java-date-time/java-util-calendar.html">Calendar</a></p>
+</blockquote>
+</li>
+</ul>
+
+<h2>
+<a id="primitieve-data-types" class="anchor" href="#primitieve-data-types" aria-hidden="true"><span class="octicon octicon-link"></span></a>Primitieve data-types</h2>
+
+<p>Java kent <strong>acht primitieve datatypes</strong> die géén objecten zijn:<br>
+<code>boolean</code>, <code>char</code>, <code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code>, <code>float</code> en <code>double</code>.<br>
+Deze datatypes zijn puur bestemd om allerlei waarden op te slaan en rekenkundige bewerkingen op uit te voeren.  </p>
+
+<p>Voor elk datatype bestaat wel een zogenaamd wrapper object (omhulzen, omwikkelen): <code>Boolean</code>, <code>Character</code>, <code>Byte</code>, <code>Short</code>, <code>Integer</code>, <code>Long</code>, <code>Float</code> en <code>Double</code>. 
+Met zo'n wrapper-object kun je o.a. de primitieve datatypes converteren naar strings (met de <em>toString()</em> methode) of omgekeerd (met o.a. de <em>parse</em> methoden). Ook kun je hiermee primitieve datatypes converteren naar wrapper objecten of omgekeerd.</p>
+
+<h3>
+<a id="gehele-getallen" class="anchor" href="#gehele-getallen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gehele getallen</h3>
+
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th>wrapper</th>
+<th>bits</th>
+<th>String (bv: "5") naar getal</th>
+<th>getal naar String</th>
+<th>Type Casting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte</td>
+<td>Byte</td>
+<td>8</td>
+<td>Byte.parseByte("string")</td>
+<td>"" + getal</td>
+<td>(byte) getal</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Short</td>
+<td>16</td>
+<td>Short.parseShort("string")</td>
+<td>"" + getal</td>
+<td>(short) getal</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Integer</td>
+<td>32</td>
+<td>Integer.parseInt("string")</td>
+<td>"" + getal</td>
+<td>(int) getal</td>
+</tr>
+<tr>
+<td>long</td>
+<td>Long</td>
+<td>64</td>
+<td>Long.parseLong("string")</td>
+<td>"" + getal</td>
+<td>(long) getal</td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="kommagetallen" class="anchor" href="#kommagetallen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kommagetallen</h3>
+
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th>wrapper</th>
+<th>bits</th>
+<th>String (bv: "5.7") naar getal</th>
+<th>getal naar String</th>
+<th>Type Casting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td>Float</td>
+<td>32</td>
+<td>Float.parseFloat("string")</td>
+<td>"" + getal</td>
+<td>(float) getal</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Double</td>
+<td>64</td>
+<td>Double.parseDouble("string")</td>
+<td>"" + getal</td>
+<td>(double) getal</td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="overige" class="anchor" href="#overige" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overige</h3>
+
+<table>
+<thead>
+<tr>
+<th>overige</th>
+<th>wrapper</th>
+<th>waarde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>char</td>
+<td>Character</td>
+<td>één 16-bit <a href="http://nl.wikipedia.org/wiki/Unicode">Unicode</a> karakter</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Boolean</td>
+<td>
+<code>true</code> of <code>false</code>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>Extra info: <a href="http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html">http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html</a></p>
+
+<h2>
+<a id="strings" class="anchor" href="#strings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Strings</h2>
+
+<ul>
+<li>
+<p><strong>Strings (en getallen) formatteren</strong></p>
+
+<blockquote>
+<p><a href="string/format.md">String.Format()</a></p>
+</blockquote>
+</li>
+</ul>
+
+<h2>
+<a id="keuzes-en-herhalingen" class="anchor" href="#keuzes-en-herhalingen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Keuzes en herhalingen</h2>
+
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th><a href="keuze_herhaling/if.md">if-else</a></th>
+<th><a href="keuze_herhaling/switch.md">switch</a></th>
+<th><a href="keuze_herhaling/equals.md">equals</a></th>
+<th><a href="keuze_herhaling/for.md">for</a></th>
+<th><a href="keuze_herhaling/for.md">while</a></th>
+<th><a href="keuze_herhaling/for.md">do-while</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte</td>
+<td>x</td>
+<td>x</td>
+<td>-</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>short</td>
+<td>x</td>
+<td>x</td>
+<td>-</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>int</td>
+<td>x</td>
+<td>x</td>
+<td>-</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>long</td>
+<td>x</td>
+<td>-</td>
+<td>-</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>float</td>
+<td>x</td>
+<td>-</td>
+<td>-</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>double</td>
+<td>x</td>
+<td>-</td>
+<td>-</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>char</td>
+<td>x</td>
+<td>x</td>
+<td>-</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>x</td>
+<td>-</td>
+<td>x</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>String</td>
+<td>-</td>
+<td>-</td>
+<td>x</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="klassen-en-objecten" class="anchor" href="#klassen-en-objecten" aria-hidden="true"><span class="octicon octicon-link"></span></a>Klassen en objecten</h2>
+
+<ul>
+<li>
+<p><strong>Klassen en objecten</strong></p>
+
+<blockquote>
+<p><a href="klassen/klassen.md">Klassen vs objecten</a> - <a href="UML/uml.md">UML diagram</a> - <a href="http://staruml.io/">StarUML</a> - <a href="javadoc/javadoc.md">Javadoc</a>  </p>
+</blockquote>
+</li>
+</ul>
+
+<h2>
+<a id="array-vs-arraylist" class="anchor" href="#array-vs-arraylist" aria-hidden="true"><span class="octicon octicon-link"></span></a>Array vs. ArrayList</h2>
+
+<table>
+<thead>
+<tr>
+<th>mogelijkheden</th>
+<th><a href="javaUtil/arrayList.md">ArrayList</a></th>
+<th><a href="javaUtil/array.md">Array</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lengte</td>
+<td>variabel</td>
+<td>vast</td>
+</tr>
+<tr>
+<td>Resizable</td>
+<td>x</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Elementen toevoegen</td>
+<td>makkelijk</td>
+<td>moeilijker</td>
+</tr>
+<tr>
+<td>Primitieve datatypes</td>
+<td>-</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Objecten</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Multidimensioneel</td>
+<td>-</td>
+<td>x</td>
+</tr>
+<tr>
+<td>for-lus</td>
+<td>waardes lezen/schrijven</td>
+<td>waardes lezen/schrijven</td>
+</tr>
+<tr>
+<td>for-each-lus</td>
+<td>enkel waardes lezen</td>
+<td>enkel waardes lezen</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h2>
+
+<ul>
+<li><a href="http://www.tutorialspoint.com/java/">http://www.tutorialspoint.com/java/</a></li>
+<li><a href="https://sites.google.com/site/cursusguielien/">https://sites.google.com/site/cursusguielien/</a></li>
+<li><a href="http://www.java2s.com/">http://www.java2s.com/</a></li>
+<li><a href="http://kendeanagudo.hubpages.com/hub/Facts-about-Animals-Its-Types-and-Classification#">animal classification</a></li>
+<li>
+<a href="http://javahungry.blogspot.com/2015/03/difference-between-array-and-arraylist-in-java-example.html">8 belangrijke verschillen tussen Array en ArrayList</a><br>
+</li>
+<li><a href="http://examples.javacodegeeks.com/core-java/util/arraylist/arraylist-in-java-example-how-to-use-arraylist/">how to use arraylist</a></li>
+<li><a href="http://beginnersbook.com/2013/12/how-to-loop-arraylist-in-java/">Loop ArrayList</a></li>
+<li><a href="http://beginnersbook.com/">http://beginnersbook.com/</a></li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/pverhaert/JAVA-basis">Java-basis</a> is maintained by <a href="https://github.com/pverhaert">pverhaert</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
