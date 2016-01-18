@@ -1,4 +1,4 @@
-#JTextField
+#JTextArea
 
 Package: [javax.swing.JTextArea](http://docs.oracle.com/javase/7/docs/api/javax/swing/JTextArea.html)
 
