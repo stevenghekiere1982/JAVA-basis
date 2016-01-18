@@ -46,7 +46,7 @@ Enkele voorbeelden van voorgedefinieerde templates:
 | `for` | for loop |
 | `fore` | for-each loop (Array en ArrayList) |
 
-U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
+U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden:
 
 | Lettercombinatie |  | Actie  |
 | ------------- | ----- | -----|
@@ -79,7 +79,7 @@ U kan natuurlijk ook eigen templates toevoegen. Enkele voorbeelden
 
 Java kent **acht primitieve datatypes** die géén objecten zijn:  
 `boolean`, `char`, `byte`, `short`, `int`, `long`, `float` en `double`.  
-Deze datatypes zijn puur bestemd om allerlei waarden op te slaan en rekenkundige bewerkingen op uit te voeren.  
+Deze datatypes zijn puur bestemd om allerlei waarden op te slaan en om rekenkundige bewerkingen op uit te voeren.  
 
 Voor elk datatype bestaat wel een zogenaamd wrapper object (omhulzen, omwikkelen): `Boolean`, `Character`, `Byte`, `Short`, `Integer`, `Long`, `Float` en `Double`. 
 Met zo'n wrapper-object kun je o.a. de primitieve datatypes converteren naar strings (met de *toString()* methode) of omgekeerd (met o.a. de *parse* methoden). Ook kun je hiermee primitieve datatypes converteren naar wrapper objecten of omgekeerd.
@@ -157,6 +157,6 @@ Extra info: [http://balusc.blogspot.be/2006/04/java-tutorial-datatypen.html](htt
 - [http://www.java2s.com/](http://www.java2s.com/)
 - [animal classification](http://kendeanagudo.hubpages.com/hub/Facts-about-Animals-Its-Types-and-Classification#)
 - [8 belangrijke verschillen tussen Array en ArrayList](http://javahungry.blogspot.com/2015/03/difference-between-array-and-arraylist-in-java-example.html)  
-- [how to use arraylist](http://examples.javacodegeeks.com/core-java/util/arraylist/arraylist-in-java-example-how-to-use-arraylist/)
+- [How to use arraylist](http://examples.javacodegeeks.com/core-java/util/arraylist/arraylist-in-java-example-how-to-use-arraylist/)
 - [Loop ArrayList](http://beginnersbook.com/2013/12/how-to-loop-arraylist-in-java/)
 - [http://beginnersbook.com/](http://beginnersbook.com/)

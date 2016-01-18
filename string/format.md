@@ -48,7 +48,7 @@ Voor het formatteren van getallen in de uitvoer, gebruik je best  `String.format
 | String.format("%6s", str)| ---abc |
 | String.format("%-6s", str)| abc--- |
 
-###Lindinstelling
+###Landinstelling
 
 De formattering voor punten en komma's wordt bepaald door de landinstelling van je systeem. Je kan de formattering wijzigen door als eerste paramater de gewenste landinstelling toe te voegen. Zie [Field Summary](http://docs.oracle.com/javase/7/docs/api/java/util/Locale.html)
 

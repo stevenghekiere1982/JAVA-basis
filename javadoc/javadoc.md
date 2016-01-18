@@ -1,6 +1,6 @@
 #Javadoc
 
-**Javadoc** is een documentatiegenerator uit de Java Development Kit (JDK), waarmee HTML-pagina's met API-documentatie worden gemaakt. API documentatie wordt gebruikt om een programma te beschrijven, het geeft aan in welke packages en klassen een Java programma is ingedeeld, welke variabelen en methoden er zijn, en wat ze precies doen in het programma.
+**Javadoc** is een documentatiegenerator uit de Java Development Kit (JDK), waarmee HTML-pagina's met API-documentatie worden gemaakt. API-documentatie wordt gebruikt om een programma te beschrijven, het geeft aan in welke packages en klassen een Java programma is ingedeeld, welke variabelen en methoden er zijn, en wat ze precies doen in het programma.
 
 Commentaar voor javadoc-informatie plaats je tussen `/**` en `*/`
 
@@ -20,5 +20,5 @@ Commentaar voor javadoc-informatie plaats je tussen `/**` en `*/`
 
 ##Javadoc genereren vanuit NetBeans
 
- - Klik met de rechtermuistoets op het project en kies "generate Javadoc" uit jet snelmenu.
+ - Klik met de rechtermuistoets op het project en kies "generate Javadoc" uit het snelmenu.
  - Je vindt de gegenereerde HTML-bestanden in de map "/dist/javadoc/".

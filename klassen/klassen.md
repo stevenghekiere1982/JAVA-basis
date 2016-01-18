@@ -4,7 +4,7 @@ Klassen en objecten vormen de basis van OOP.
 Je kan Java niet begrijpen zonder goed met klassen en objecten overweg te kunnen.
 
 
-##OOP begrippen
+##OOP-begrippen
 
 ###Object
 

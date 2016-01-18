@@ -104,7 +104,7 @@ class Paneel extends JPanel {
 
     public Paneel() {
         setLayout(new GridLayout(3, 2, 10, 10));    //rijen, kolommen, horizontale padding, verticale padding
-        Border rand = BorderFactory.createEmptyBorder(10, 10, 10, 10);  // rand(boven, links, onder, rechts)
+        Border rand = BorderFactory.createEmptyBorder(10, 10, 10, 10);  // rand (boven, links, onder, rechts)
         setBorder(rand);
         add(btn1);
         add(txt1);

@@ -1,7 +1,7 @@
 #Vergelijken van strings
 
 
-Vergelijk strings **nooit** met een if statement.   
+Vergelijk strings **nooit** met een if-statement.   
 Voor stringvergelijkingen gebruik je steeds de methode `equals()` of `equalsIgnoreCase()`!
 
 ```java

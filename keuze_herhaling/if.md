@@ -6,7 +6,7 @@ Zie: strings vergelijken met [equals](equals.md).
 
 ##if
 
-Indien een bepaalde voorwaarde `waar` is, voer dan alle instructies uit binnen het if-blok.
+Indien een bepaalde voorwaarde `waar` is, voer dan alle instructies binnen het if-blok uit.
 
 ```java
 int getal = Integer.parseInt(g.getText());
@@ -28,7 +28,7 @@ lbl.setText(getal + " is een " + eo + " getal.");
 
 ##if-else
 
-Indien een bepaalde voorwaarde `waar` is, voer dan alle instructies uit binnen het if-blok. Indien de voorwaarde `onwaar` is, voer dan de instructies binnen het else-blok uit.
+Indien een bepaalde voorwaarde `waar` is, voer dan alle instructies binnen het if-blok uit. Indien de voorwaarde `onwaar` is, voer dan de instructies binnen het else-blok uit.
 
 ```java
 int getal = Integer.parseInt(g.getText());

@@ -6,14 +6,14 @@ Package: [java.lang.StringBuffer](http://docs.oracle.com/javase/7/docs/api/java/
 
 ## String vs StringBuffer.
 
-Bij **veel wijzigingen** kan je beter  een **StringBuffer** gebruiken dan dan een **String**.
+Bij **veel wijzigingen** kan je beter  een **StringBuffer** gebruiken dan een **String**.
 
-- String is een niet te wijzigen (immutable) object (eenmaal gemaakt, kan hij niet worden gewijzigd).
+- String is een niet te wijzigen (immutable) object (eenmaal gemaakt, kan dit niet worden gewijzigd).
 - Bij veranderen van String wordt **nieuw object gemaakt** en wijst String-referentie naar het nieuw object.  
-  Oud String-object is verloren
+  Het oude String-object gaat verloren.
 - Een StringBuffer is een variabele (in feite een collectie) waarin automatisch voldoende ruimte wordt voorzien voor stringmanipulaties.
 - Initieel bevat StringBuffer-object 16 tekens/cellen.  
-Als bufferruimte vol is, wordt automatisch nieuwe collectie van dubbele grootte aangemaakt (en de inhoud van de StringBuffer daarin gekopieerd).  
+Als de bufferruimte vol is, wordt automatisch een nieuwe collectie van dubbele grootte aangemaakt (en de inhoud van de StringBuffer daarin gekopieerd).  
 
 
 ###De methode toString().

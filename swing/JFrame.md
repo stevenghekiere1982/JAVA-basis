@@ -4,11 +4,11 @@ Package: [javax.swing.JFrame](http://docs.oracle.com/javase/7/docs/api/javax/swi
 
 ---
 
-Elke applicatie bestaat uit een venster (een **frame**) dat later wordt ingevuld componenten zoals: teksten, knoppen, teksvelden, een menubalk, enz...
+Elke applicatie bestaat uit een venster (een **frame**) dat later wordt ingevuld met componenten zoals: teksten, knoppen, teksvelden, een menubalk, enz...
 
 ## Basisstructuur van een leeg frame.
 
-De opstartklasse zorgt alleen voor het maken van een JFrame-object. Het frame is voorlopig leeg, en heeft enkel een titel en een sluitknop. Om het vesnter ook inhoud te geven, voegen we later een [JPanel](JPanel.md) toe.
+De opstartklasse zorgt alleen voor het maken van een JFrame-object. Het frame is voorlopig leeg, en heeft enkel een titel en een sluitknop. Om het venster ook inhoud te geven, voegen we later een [JPanel](JPanel.md) toe.
 
 **LET OP:** de *naam van de opstartklasse* (gebruikt op lijnen 4 en 6) MOET identiek zijn aan de *naam van het java-bestand*. In dit voorbeeld noemt het java-bestand ***voorbeeld.java***.
 

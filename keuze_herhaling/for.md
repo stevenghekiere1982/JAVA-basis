@@ -1,7 +1,7 @@
 #Herhalingen
 
 
-##For lus
+##For-us
 
 ```java
 // for-lus
@@ -10,12 +10,12 @@ for (van; tot; teller verhogen){
 }
 ```
 
-##While lus
+##While-lus
 
 Deze lus wordt vaak gebruikt in situaties waarbij het aantal stappen op voorhand onbekend is.
 De lus stopt op het moment dat de voorwaarde `false` (onwaar) is.
 
-Vergeet binnen een while-lus vooral niet de waarde van de teller met één te verhogen (`i++`),
+Vergeet binnen een while-lus vooral niet de waarde van de teller met Ã©Ã©n te verhogen (`i++`),
 anders blijft de lus oneindig lopen!
 
 ```java
@@ -25,11 +25,11 @@ while (voorwaarde) {
 }
 ```
 
-##Do-while lus
+##Do-while-lus
 
 Deze lus is bijna identiek aan de While-lus.   
 Een While-lus wordt **enkel** uitgevoerd indien de voorwaarde true is. Indien de startvoorwaarde al false is, wordt de lus helemaal niet uitgevoerd.   
-In tegenstelling tot een while-lus, wordt een do-while-lus **altijd minstens één maal** uitgevoerd, ook al is de beginvoorwaarde false. De test gebeurt immers helemaal op het einde, nadat de
+In tegenstelling tot een while-lus, wordt een do-while-lus **altijd minstens Ã©Ã©n maal** uitgevoerd, ook al is de beginvoorwaarde false. De test gebeurt immers helemaal op het einde, nadat de
 bewerking reeds is uitgevoerd.
 
 ```java

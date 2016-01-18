@@ -3,7 +3,7 @@
 
 ##Switch
 
-Net zoals een `if-else` test je met een `switch` een variabele in functie van een aantal voorgedefinieerde waardes.
+Net zoals met een `if-else`, test je met een `switch` een variabele in functie van een aantal voorgedefinieerde waardes.
 
 ```java
 int getal = Integer.parseInt(g.getText());

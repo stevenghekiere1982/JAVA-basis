@@ -4,10 +4,10 @@ Package: [java.util.ArrayList](http://docs.oracle.com/javase/7/docs/api/java/uti
 
 ---
 
-- Een ArrayList is, net zoals een array, een object waarin je soortgelijke gegevens (objecten of waarden van hetzelfde type) kan stockeren.  
+- Een ArrayList is, net zoals een array, een object waarin je soortgelijke gegevens (objecten of waardes van hetzelfde type) kan stockeren.  
 - Het merendeel van de ontwikkelaars verkiezen een ArrayList boven een Array vanwege de functionaliteit en de flexibiliteit die een ArrayList biedt.  
 - Het probleem met Arrays is dat ze een vaste lengte hebben. ArrayLists hebben geen vaste lengte en zijn dus makkelijk uitbreidbaar.  
-Als je uit een Array een elementen verwijderd, zal het geheugengebruik hetzelfde blijven omdat de Array niet krimpt.  
+Als je uit een Array een element verwijdert, zal het geheugengebruik hetzelfde blijven omdat de Array niet krimpt.  
 Anderzijds kan een ArrayList dynamisch groeien en krimpen volgens de behoefte.  
 
 
@@ -32,8 +32,8 @@ puntenLijst.clear();            // maak de lijst leeg
 puntenLijst.size();             // geef het aantal elementen in de lijst
 puntenLijst.toArray();          // maak van de lijst een gewone array
 puntenLijst.contains(4.6);      // is true indien de lijst de waarde 4.6 bevat
-puntenLijst.indexOf(4.6);       // geef te eerste positie binnen de lijst die de waarde 4.6 bevat
-puntenLijst.lastIndexOf(4.6);   // geef te laatste positie binnen de lijst die de waarde 4.6 bevat
+puntenLijst.indexOf(4.6);       // geef de eerste positie binnen de lijst die de waarde 4.6 bevat
+puntenLijst.lastIndexOf(4.6);   // geef de laatste positie binnen de lijst die de waarde 4.6 bevat
 Collections.shuffle(puntenLijst);   // plaats elementen in willekeurige volgorde
 Collections.reverse(puntenLijst);   // plaats elementen in omgekeerde volgorde
 Collections.sort(puntenLijst);      // sorteer de elementen van laag naar hoog

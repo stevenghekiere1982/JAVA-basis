@@ -48,7 +48,7 @@ int[] arr = {1, 8, 6};    // new int[] is zelfs overbodig
 System.out.println("arr = " + Arrays.toString(arr));
 ````
 
-Voor alle vier de methodes is de uitvoer identiek: `arr = [1, 8, 6]`
+Voor alle vier de methoden is de uitvoer identiek: `arr = [1, 8, 6]`
 
 ##Elementen uit een array ophalen/wijzigen.
 
@@ -243,7 +243,7 @@ Zie `System.arraycopy()`.
 
 ##Tweedimensionale array.
 
-Een tweedimensionale array kan je best vergelijken mat een tabel, met een matrix of met een spreadsheet.
+Een tweedimensionale array kan je best vergelijken met een tabel, met een matrix of met een spreadsheet.
 
 ````java
 // array (tabel) van 3 rijen en 5 kolommen        
